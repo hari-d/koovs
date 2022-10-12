@@ -5,8 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:react/recommended',
-    'airbnb',
+    'next/core-web-vitals', 'airbnb', 'airbnb/hooks',
   ],
   overrides: [
   ],
@@ -18,5 +17,14 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/prop-types': [0, { extensions: ['.js', '.jsx'] }],
+    '@next/next/no-img-element': 'off',
+    'react/function-component-definition': [2, {
+      // "namedComponents":  "arrow-function"
+      // "unnamedComponents": "function-expression" | "arrow-function" | Array<"function-expression" | "arrow-function">
+    }],
+    linebreak: 0,
   },
 };
