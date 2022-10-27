@@ -108,10 +108,12 @@ export default function FooterMenu() {
               <ArrowUpRightIcon className="h-4 mt-4" />
             </li>
           </Link>
-          <li className="flex">
-            <a href="#" className="hover:text-purple-500 text-sm mt-4">Koovs Sport</a>
-            <ArrowUpRightIcon className="h-4 mt-4" />
-          </li>
+          <Link href="/koovs-sport">
+            <li className="flex">
+              <a href="#" className="hover:text-purple-500 text-sm mt-4">Koovs Sport</a>
+              <ArrowUpRightIcon className="h-4 mt-4" />
+            </li>
+          </Link>
         </ul>
       </div>
     </div>

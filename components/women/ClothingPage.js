@@ -190,15 +190,35 @@ export default function ClothingPage() {
             <button type="button" className="text-right pr-10 text-gray-500 cursor-pointer" onClick={() => router.push('/')}>Size Guide</button>
           </div>
           <div className="flex space-x-2">
-            <button type="button" className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">XS</button>
-            <button type="button" className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">S</button>
-            <button type="button" className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">M</button>
-            <button type="button" className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">L</button>
-            <button type="button" className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">XL</button>
+            <button
+              type="button"
+              className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">
+              XS</button>
+            <button
+              type="button"
+              className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">
+              S</button>
+            <button
+              type="button"
+              className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">
+              M</button>
+            <button
+              type="button"
+              className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">
+              L</button>
+            <button
+              type="button"
+              className="hover:border-b hover:border-b-black hover:border-t hover:border-t-black hover:border-l hover:border-l-black hover:border-r hover:border-r-black rounded-md p-4 h-14 w-16">
+              XL</button>
           </div>
           <div className="py-2 space-y-4">
-            <button type="button" className="bg-black text-white cursor-pointer rounded-full h-16 w-96 text-lg">Add to Bag</button>
-            <button type="button" className="border cursor-pointer border-gray-300 hover:border-black rounded-full h-16 w-96 text-lg space-x-4">
+            <button
+              type="button"
+              className="bg-black text-white cursor-pointer rounded-full h-16 w-96 text-lg">
+              Add to Bag</button>
+            <button
+              type="button"
+              className="border cursor-pointer border-gray-300 hover:border-black rounded-full h-16 w-96 text-lg space-x-4">
               <div className="flex justify-center">
                 <span>Favourite</span>
                 <span><HeartIcon className="h-5 w-5 right-2" /></span>
