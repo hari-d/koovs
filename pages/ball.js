@@ -1,11 +1,12 @@
 import React from 'react';
-import Body from '../components/layout/Body';
 import Layout from '../components/layout/Layout';
+import BALL from '../components/topbrands/BALL';
 
-export default function Home() {
+export default function BALLPage() {
   return (
     <Layout>
-      <Body />
+      <BALL />
     </Layout>
+
   );
 }

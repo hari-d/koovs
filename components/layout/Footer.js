@@ -6,8 +6,8 @@ import MediaPayment from './MediaPayment';
 export default function Footer() {
   return (
     <div className="bg-gray-200 space-y-4 p-8">
-      <div className="grid grid-cols-12 gap-4 px-4 py-8">
-        <div className="col-span-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 py-8">
+        <div className="col-span-1 md:col-span-5">
           <div className="flex">
             <input
               type="email"
@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="col-span-7 space-y-10">
+        <div className="col-span-1 md:col-span-7 space-y-10">
           <FooterMenu />
           <MediaPayment />
         </div>

@@ -1,11 +1,11 @@
 import React from 'react';
-import Body from '../components/layout/Body';
 import Layout from '../components/layout/Layout';
+import Nike from '../components/topbrands/Nike';
 
-export default function Home() {
+export default function NikePage() {
   return (
     <Layout>
-      <Body />
+      <Nike />
     </Layout>
   );
 }

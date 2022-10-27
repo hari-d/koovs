@@ -2,11 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+};
 
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: [""]
-  }
+    domains: ['static.nike.com', 'https://cdn1.storehippo.com'],
+  },
 };

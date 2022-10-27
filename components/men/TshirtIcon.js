@@ -1,0 +1,11 @@
+import React from 'react';
+
+export default function TshirtIcon({ Icon, title }) {
+  console.log('file: TshirtIcon.js ~ line 4 ~ TshirtIcon ~ Icon', Icon);
+  return (
+    <div className="mx-4 cursor-pointer lg:mx-6 flex space-x-2">
+      <Icon className="h-5 w-5" />
+      <p className="mx-1">{title}</p>
+    </div>
+  );
+}

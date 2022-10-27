@@ -6,7 +6,7 @@ import HeaderIcon from './HeaderIcon';
 
 export default function Header() {
   return (
-    <div className="bg-gray-100 flex flex-col items-center select-none sm:flex-row justify-between px-8 border-b border-gray-800 hover:bg-gray-50 hover:border-none sticky top-0">
+    <div className="bg-gray-100 flex flex-col items-center select-none sm:flex-row justify-between px-8 border-b border-gray-800 hover:bg-gray-50 hover:border-none sticky top-0 z-50">
       <div>
         <ul className="ml-3 flex space-x-2 items-center ">
           <li className="border-r-2 border-gray-400">

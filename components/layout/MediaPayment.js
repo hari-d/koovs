@@ -13,19 +13,19 @@ export default function MediaPayment() {
           </li>
           <li className="flex gap-4">
             <FaInstagram className="h-5 mt-5" />
-            <a href="#" className="hover:text-purple-400 text-sm mt-5">instagram</a>
+            <a href="https://www.instagram.com/koovsfashion/" target="_blank" className="hover:text-purple-400 text-sm mt-5" rel="noreferrer">instagram</a>
           </li>
           <li className="flex gap-4">
             <FaFacebook className="h-5 mt-4" />
-            <a href="#" className="hover:text-purple-400 text-sm mt-4">facebook</a>
+            <a href="https://www.facebook.com/koovs" target="_blank" className="hover:text-purple-400 text-sm mt-4" rel="noreferrer">facebook</a>
           </li>
           <li className="flex gap-4">
             <FaYoutubeSquare className="h-5 mt-4" />
-            <a href="#" className="hover:text-purple-400 text-sm mt-4">youtube</a>
+            <a href="https://www.youtube.com/user/Koovsdotcom" target="_blank" className="hover:text-purple-400 text-sm mt-4" rel="noreferrer">youtube</a>
           </li>
           <li className="flex gap-4">
             <FaWhatsapp className="h-5 mt-4" />
-            <a href="#" className="hover:text-purple-400 text-sm mt-4">whatsapp</a>
+            <a href="https://api.whatsapp.com/send?phone=6363186402" target="_blank" className="hover:text-purple-400 text-sm mt-4" rel="noreferrer">whatsapp</a>
           </li>
         </ul>
       </div>
