@@ -163,45 +163,34 @@ export default function BALL() {
       price,
     } = item;
     return (
-      <div className="col-span-3 py-10">
-        <div className="relative w-96 h-96  text-white overflow-hidden cursor-pointer transition-all duration-700 card" key={id}>
-          <div className="absolute inset-0  flex justify-center items-center  transition-all duration-100 delay-200 z-20 hover:opacity-0">
-            <div className="">
-              <div className="flex justify-end pr-4 relative top-8">
-                {icon}
-              </div>
-              <img
-                className="h-[300px] w-[300px]"
-                src={image1}
-                alt={heading}
-              />
-            </div>
+      <div className="group col-span-6  md:col-span-3 mx-2" key={id}>
+
+        <div className="">
+          <div className="flex justify-end pr-6 relative top-8">
+            {icon}
           </div>
-          <div className="absolute inset-0  flex justify-center items-center  transition-all z-10 card-back">
-            <div className="relative">
-              <div className="flex justify-end pr-4 relative top-8">
-                {icon}
+
+          <img
+            src={image1}
+            alt="Image notfound"
+            onMouseOver={(e) => e.currentTarget.src = image2}
+            onMouseOut={(e) => e.currentTarget.src = image1}
+            className=" mx-auto my-auto transition ease-in-out duration-700
+            w-[200px] h-[200px]  lg:w-[300px] lg:h-[400px]"
+          />
+
+          <div className="opacity-0 group-hover:opacity-100  bg-gray-50 relative bottom-4 text-gray-800">
+            <div className="flex justify-between">
+              <div>
+                <p className="cursor-pointer">{para1}</p>
               </div>
-              <img
-                className="h-[300px] w-[300px]"
-                src={image2}
-                alt={heading}
-              />
-              <div className="bg-gray-50 relative bottom-4 text-gray-800">
-                <div className="flex justify-between">
-                  <div>
-                    <p className="cursor-pointer">{para1}</p>
-                  </div>
-                  <p className="cursor-pointer font-bold text-xs">{para2}</p>
-                  <p className="cursor-pointer font-bold text-xs">{para3}</p>
-                  <p className="cursor-pointer font-bold text-xs">{para4}</p>
-                  <p className="cursor-pointer font-bold text-xs">{para5}</p>
-                  <p className="cursor-pointer font-bold text-xs">{para6}</p>
-                </div>
-              </div>
+              <p className="cursor-pointer font-bold text-xs">{para2}</p>
+              <p className="cursor-pointer font-bold text-xs">{para3}</p>
+              <p className="cursor-pointer font-bold text-xs">{para4}</p>
             </div>
           </div>
         </div>
+
         <div className="py-1 cursor-pointer">
           <h3 className="text-gray-500 text-center cursor-pointer text-sm pl-10">
             {heading}
@@ -222,7 +211,7 @@ export default function BALL() {
       <div className="mx-auto mt-7">
         <h1 className="text-2xl font-bold text-center mx-auto">BALL</h1>
       </div>
-      <div className="border-b border-gray-400 mx-24 mt-7" />
+      <div className="border-b-2 border-gray-300 mx-14 mt-7" />
       <div className="flex justify-between mx-24 mt-4">
         <div className="flex space-x-4">
           <BALLIcon Icon={AdjustmentsHorizontalIcon} title="Filter" />
@@ -244,53 +233,6 @@ export default function BALL() {
         {data.map((item) => (
           renderData(item)
         ))}
-        <div className="col-span-3 py-10">
-          <div className="relative w-96 h-96  text-white overflow-hidden cursor-pointer transition-all duration-700 card">
-            <div className="absolute inset-0  flex justify-center items-center  transition-all duration-100 delay-200 z-20 hover:opacity-0">
-              <div className="">
-                <div className="flex justify-end pr-4 relative top-8">
-                  <BookmarkIcon className="h-5 w-5 stroke-black stroke-2" />
-                </div>
-                <img
-                  className="h-[300px] w-[300px]"
-                  src="https://cdn3.storehippo.com/s/609230a6463cd1593a6b70f1/62f693cc1f81c4212e7cd028/webp/690-1-2221956_off-white-600x800.jpg"
-                  alt="image"
-                />
-              </div>
-            </div>
-            <div className="absolute inset-0  flex justify-center items-center  transition-all z-10 card-back">
-              <div className="relative">
-                <div className="flex justify-end pr-4 relative top-8">
-                  <BookmarkIcon className="h-5 w-5 stroke-black stroke-2" />
-                </div>
-                <img
-                  className="h-[300px] w-[300px]"
-                  src="https://cdn3.storehippo.com/s/609230a6463cd1593a6b70f1/62f693cd599077203a2faf86/webp/690-1-2221956_off-white_1-600x800.jpg"
-                  alt="image"
-                />
-                <div className="bg-gray-50 relative bottom-4 text-gray-800">
-                  <div className="flex justify-between">
-                    <div>
-                      <p className="cursor-pointer">ADD TO CART+</p>
-                    </div>
-                    <p className="cursor-pointer font-bold text-xs" />
-                    <p className="cursor-pointer font-bold text-xs">S</p>
-                    <p className="cursor-pointer font-bold text-xs">M</p>
-                    <p className="cursor-pointer font-bold text-xs">L</p>
-                    <p className="cursor-pointer font-bold text-xs">XL</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h3 className="text-gray-500 text-center cursor-pointer text-sm pl-10">
-            BALL
-          </h3>
-          <h3 className="text-center cursor-pointer text-sm pl-12">
-            RIMINI RAGLAN CREW NECK-OFF WHITE
-          </h3>
-          <h4 className="text-center cursor-pointer text-sm pl-10">₹3,490</h4>
-        </div>
       </div>
     </div>
   );

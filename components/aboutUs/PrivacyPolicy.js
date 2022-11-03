@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 export default function PrivacyPolicy() {
   const [enabled, setEnabled] = useState(false);
   return (
-    <div>
-      <div className="py-16">
+    <div className="dark:bg-black dark:text-white">
+      <div className="py-16 mt-4">
         <p className="text-xl text-blue-600">
           Normal Mode
         </p>
@@ -38,13 +38,14 @@ export default function PrivacyPolicy() {
         />
         <div className="flex align-middle my-auto">
           <div className="space-y-2">
-            <h1 className="text-2xl font-semibold text-center">Privacy Policy</h1>
-            <p className="font-semibold mx-auto align-middle my-auto text-lg">
+            <h1 className="text-3xl font-semibold text-center pb-20">Privacy Policy</h1>
+            <p className="font-semibold mx-auto align-middle my-auto text-3xl">
               We value your privacy and the trust you place in us.
             </p>
           </div>
         </div>
-        <div className="lg:mx-96 md:mx-42 mx-24 w-full">
+
+        <div className="lg:mx-96 md:mx-48 sm:mx-24 w-full">
           <h1 className="font-extrabold  text-justify mx-auto  mt-7 text-2xl">
             Introduction
           </h1>
@@ -169,7 +170,9 @@ export default function PrivacyPolicy() {
           <p className="text-sm  mt-3 text-justify mx-auto">
             If we decide to change our privacy policy, we will post those changes on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we disclose it.
           </p>
-          <div className="dark:border-gray-50 border-t-2 border-gray-700 mt-28 my-14 mx-24" />
+          <div className="dark:border-gray-50 border-t-2 border-gray-700 w-[1200px]
+           mt-28 my-14 -mx-72"
+          />
         </div>
       </div>
     </div>

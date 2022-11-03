@@ -1,5 +1,4 @@
-import { AdjustmentsHorizontalIcon, ArrowDownIcon, BookmarkIcon }
-  from '@heroicons/react/24/outline';
+import { AdjustmentsHorizontalIcon, ArrowDownIcon, BookmarkIcon } from '@heroicons/react/24/outline';
 import React from 'react';
 import { BiDotsHorizontal, BiDotsVertical } from 'react-icons/bi';
 import ArkkCopenhagenIcon from './ArkkCopenhagenIcon';
@@ -92,7 +91,7 @@ export default function ArkkCopenhagen() {
       id, icon, image, heading, subHeading, price,
     } = item;
     return (
-      <div className=" col-span-3 py-10"  key={id}>
+      <div className="col-span-6  md:col-span-3  py-10" key={id}>
         <div className="">
           <div className="flex justify-end pr-10 relative top-6">
             {icon}
@@ -118,14 +117,20 @@ export default function ArkkCopenhagen() {
       <div className="mx-auto mt-7">
         <h1 className="text-2xl font-bold text-center mx-auto">ARKK COPENHAGEN</h1>
       </div>
-      <div className="border-b border-gray-400 mx-24 mt-7" />
+      <div className="border-b-2 border-gray-300 mx-14 mt-7" />
       <div className="flex justify-between mx-24 mt-4">
         <div className="flex space-x-4">
           <ArkkCopenhagenIcon Icon={AdjustmentsHorizontalIcon} title="Filter" />
           <ArkkCopenhagenIcon Icon={ArrowDownIcon} title="Sort By" />
         </div>
         <div className="flex space-x-4">
-          <p className="cursor-pointer text-sm">showing <b>10</b> styles</p>
+          <p className="cursor-pointer text-sm">
+            showing
+            {' '}
+            <b>10</b>
+            {' '}
+            styles
+          </p>
           <ArkkCopenhagenIcon Icon={BiDotsVertical} title="2" />
           <ArkkCopenhagenIcon Icon={BiDotsHorizontal} title="4" />
         </div>

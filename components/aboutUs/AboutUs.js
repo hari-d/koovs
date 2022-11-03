@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 export default function AboutUs() {
   const [enabled, setEnabled] = useState(false);
   return (
-    <div className='dark:bg-black'>
+    <div className="dark:bg-black">
       <div className="py-16">
         <p className="text-xl text-blue-600">
           Normal Mode
@@ -33,7 +33,7 @@ export default function AboutUs() {
         </Switch>
         <p className="text-xl text-blue-600">Dark Mode</p>
       </div>
-      <div className="dark:bg-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-9">
+      <div className="dark:bg-black grid grid-cols-1 md:grid-cols-2 gap-9">
         <img
           className="mt-9 h-[700px] w-[700px]"
           src="https://cdn3.storehippo.com/s/609230a6463cd1593a6b70f1/62fb7cc0b584b058444cf216/webp/a656a150-930f-4a07-9566-42b9dcb95ea3-1366x1376.jpeg"
@@ -55,7 +55,8 @@ export default function AboutUs() {
           So come shop, learn, chill and do much more with us - the new KOOVS
         </p>
         <div className="dark:bg-black dark:border-gray-50 border-t-2 border-gray-700
-        mt-28 py-14 mx-24" />
+        mt-28 py-14 mx-24"
+        />
       </div>
     </div>
   );

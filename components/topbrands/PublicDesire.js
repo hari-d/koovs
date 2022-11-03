@@ -351,7 +351,7 @@ export default function PublicDesire() {
     } = item;
     return (
 
-      <div className="group col-span-3" key={id}>
+      <div className="group col-span-6  md:col-span-3 mx-2" key={id}>
 
         <div className="">
           <div className="flex justify-end pr-6 relative top-8">
@@ -402,7 +402,7 @@ export default function PublicDesire() {
       <div className="mx-auto mt-7">
         <h1 className="text-2xl font-semibold text-center mx-auto">PUBLIC DESIRE</h1>
       </div>
-      <div className="border-b border-gray-400 mx-24 mt-7" />
+      <div className="border-b-2 border-gray-300 mx-14 mt-7" />
       <div className="flex justify-between mx-24 mt-4">
         <div className="flex space-x-4">
           <PublicDesireIcon Icon={AdjustmentsHorizontalIcon} title="Filter" />

@@ -29,22 +29,25 @@ export default function ContactUs() {
         </Switch>
         <p className="text-xl text-blue-600">Dark Mode</p>
       </div>
-      <div className=" dark:bg-black dark:text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-9">
+      <div className=" dark:bg-black dark:text-white grid grid-cols-1 md:grid-cols-2 gap-9">
         <img
-          className="mt-9 h-[700px] w-[700px]"
+          className="mt-9 lg:h-[700px] lg:w-[700px] "
           src="https://cdn3.storehippo.com/s/609230a6463cd1593a6b70f1/63072cf6ed8633105bf83e75/webp/contact-us-1366x1376.jpg"
           alt="image"
         />
         <div className="flex align-middle my-auto">
           <div className=" dark:bg-black dark:text-white space-y-2">
-            <h1 className="text-2xl font-semibold text-center">Contact Us</h1>
-            <p className="font-semibold mx-auto align-middle my-auto text-lg">
+            <h1 className="text-2xl font-semibold text-center text-4xl pb-20">Contact Us</h1>
+            <p className="font-semibold mx-auto align-middle my-auto text-4xl mt-4">
               Please leave your comments/feedback any time - care@koovs.com
             </p>
           </div>
         </div>
+        <div className="dark:bg-black dark:border-gray-50 w-[1200px] border-t-2
+         border-gray-700 mt-28 py-14 ml-20"
+        />
       </div>
-      <div className="dark:bg-black dark:border-gray-50 border-t-2 border-gray-700 mt-28 py-14 mx-24" />
+
     </div>
 
   );

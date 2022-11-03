@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 export default function () {
   const [enabled, setEnabled] = useState(false);
   return (
-    <div>
+    <div className="dark:bg-black dark:text-white">
       <div className="py-16">
         <p className="text-xl text-blue-600">
           Normal Mode
@@ -37,8 +37,8 @@ export default function () {
         />
         <div className=" dark:bg-black dark:text-white flex align-middle my-auto">
           <div className="dark:bg-black dark:text-white space-y-2">
-            <h1 className="dark:text-white text-2xl font-semibold text-center">Careers</h1>
-            <p className="dark:bg-black dark:text-white font-semibold mx-auto align-middle my-auto text-xl">
+            <h1 className="dark:text-white text-4xl font-semibold text-center pb-28">Careers</h1>
+            <p className="dark:bg-black dark:text-white font-semibold mx-auto align-middle my-auto text-3xl">
               Age is just a number. To us, youth means fresh energy, creative novelty, untapped potential in every individual. Feel like you fit in? Hop on to join this ever-young crew.
             </p>
           </div>
@@ -55,7 +55,9 @@ export default function () {
         <p className="text-center text-base mt-2">
           *koovs believes in absolute neutral treatment of candidates and has a stringent policy against discrimination of any sort.
         </p>
-        <div className="dark:bg-black dark:border-gray-50 border-t-2 border-gray-700 mt-28 py-14 mx-24" />
+        <div className="dark:bg-black dark:border-gray-50 border-t-2 border-gray-700
+         mt-28 py-14 mx-24"
+        />
       </div>
     </div>
   );

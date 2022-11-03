@@ -274,7 +274,7 @@ export default function KoovsSport() {
     } = item;
     return (
 
-      <div className="group col-span-3" key={id}>
+      <div className="group col-span-6  md:col-span-3 mx-2" key={id}>
 
         <div className="">
           <div className="flex justify-end pr-6 relative top-8">
@@ -286,8 +286,8 @@ export default function KoovsSport() {
             alt="Image notfound"
             onMouseOver={(e) => e.currentTarget.src = image2}
             onMouseOut={(e) => e.currentTarget.src = image1}
-            className=" mx-auto my-auto transition ease-in-out duration-700 w-[300px]
-              h-[300px]"
+            className=" mx-auto my-auto transition ease-in-out duration-700
+            w-[200px] h-[200px]  lg:w-[300px] lg:h-[400px]"
           />
 
           <div className="opacity-0 group-hover:opacity-100  bg-gray-50 relative bottom-4 text-gray-800">
@@ -322,7 +322,7 @@ export default function KoovsSport() {
       <div className="mx-auto mt-7">
         <h1 className="text-2xl font-semibold text-center mx-auto">KOOVS SPORT</h1>
       </div>
-      <div className="border-b border-gray-400 mx-24 mt-7" />
+      <div className="border-b-2 border-gray-300 mx-10 mt-7" />
       <div className="flex justify-between mx-24 mt-4">
         <div className="flex space-x-4">
           <KoovsSportIcon Icon={AdjustmentsHorizontalIcon} title="Filter" />

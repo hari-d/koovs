@@ -5,19 +5,19 @@ export default function TermsandConditions() {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-9">
         <img
-          className="mt-9 h-[700px] w-[700px]"
+          className="mt-9 lg:h-[700px] lg:w-[700px] md:h-[500px] md:w-[500px]"
           src="https://cdn3.storehippo.com/s/609230a6463cd1593a6b70f1/60d2fa2af0ede093094f4fe4/webp/static-page-banner-1366x1376.jpg"
           alt="image"
         />
         <div className="flex align-middle my-auto">
           <div className="space-y-2 mx-auto">
-            <p className="text-2xl font-semibold ">Terms and Conitions</p>
-            <p className="font-semibold text-center text-lg">
+            <p className="text-3xl font-semibold pb-20">Terms and Conitions</p>
+            <p className="font-semibold text-center text-3xl">
               koovs
             </p>
           </div>
         </div>
-        <div className="mx-96 w-full">
+        <div className="lg:mx-96 md:mx-44 sm:mx-24 w-full">
           <h1 className="font-extrabold  text-justify mx-auto  mt-7 text-lg">
             TERMS & CONDITIONS
           </h1>
@@ -264,7 +264,7 @@ export default function TermsandConditions() {
           <p className=" text-sm  mt-5 text-justify mx-auto">
             Questions about the Terms of Service should be sent to us at hello@koovs.com
           </p>
-          <div className="border-t-2 border-gray-700 mt-28 my-14 mx-24" />
+          <div className="border-t-2 border-gray-700 mt-28 my-14 w-[-1400px]" />
         </div>
       </div>
     </div>

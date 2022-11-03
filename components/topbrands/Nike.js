@@ -91,7 +91,7 @@ export default function Nike() {
       //   </h4>
       //   {icon}
       // </div>
-      <div className=" col-span-3 py-10" key={id}>
+      <div className="col-span-6  md:col-span-3  py-10" key={id}>
         <div className="">
           <div className="flex justify-end pr-10 relative top-6">
             {icon}
@@ -116,7 +116,7 @@ export default function Nike() {
       <div className="mx-auto mt-7">
         <h1 className="text-2xl font-bold text-center mx-auto">NIKE</h1>
       </div>
-      <div className="border-b border-gray-400 mx-24 mt-7" />
+      <div className="border-b-2 border-gray-300 mx-14 mt-7" />
       <div className="flex justify-between mx-24 mt-4">
         <div className="flex space-x-4">
           <NikeIcon Icon={AdjustmentsHorizontalIcon} title="Filter" />

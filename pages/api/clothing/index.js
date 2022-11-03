@@ -1,0 +1,13 @@
+import React from 'react';
+import Layout from '../../components/layout/Layout';
+import Clothing from '../../components/women/Clothing';
+
+export default function ClothingPage() {
+  return (
+    <div>
+      <Layout>
+        <Clothing />
+      </Layout>
+    </div>
+  );
+}

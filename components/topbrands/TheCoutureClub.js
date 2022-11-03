@@ -1,4 +1,5 @@
 import { AdjustmentsHorizontalIcon, ArrowDownIcon, BookmarkIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 import React from 'react';
 import { BiDotsHorizontal, BiDotsVertical } from 'react-icons/bi';
 import TheCoutureClubIcon from './TheCoutureClubIcon';
@@ -18,6 +19,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'CTRE 3D MULTI LOGO T-SHIRT',
     price: '2,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 2,
@@ -33,6 +35,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'DROP CROTCH LIGHTWEIGHT SHORT - CHARCOAL',
     price: '3,290',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 3,
@@ -48,6 +51,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'WORLD SERIES APPLIQUE BADGED HOODIE - BLACK',
     price: '5,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 4,
@@ -63,6 +67,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'VARSITY PRINT RELAXED T-SHIRT - ACID WASH',
     price: '3,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 5,
@@ -78,6 +83,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'HEAVYWEIGHT TWINSET TSHIRT - CHARCOAL',
     price: '3,290',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 6,
@@ -93,6 +99,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'DISTRESS DETAIL SPADE PRINT HOODIE - OFFWHITE',
     price: '4,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 7,
@@ -108,6 +115,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'HEAVYWEIGHT TWINSET T-SHIRT - STONE',
     price: '3,290',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 8,
@@ -123,6 +131,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'VARSITY SWIM SHORT WITH ZIPS - WHITE',
     price: '2,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 9,
@@ -138,6 +147,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'SPADE APPLIQUE RED VARSITY JACKET - RED',
     price: '6,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 10,
@@ -153,6 +163,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'PHOTO GRAPHIC REGULAR FIT T-SHIRT - BLACK',
     price: '2,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 11,
@@ -168,6 +179,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'PHOTO GRAPHIC REGULAR FIT T-SHIRT - WHITE',
     price: '2,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 12,
@@ -183,6 +195,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'CACTUS PRINTED PUFF SLEEVE HOODIE - OFF WHITE',
     price: '4,490',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 13,
@@ -198,6 +211,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'SIGNATURE REFLECTIVE REGULAR HOODIE',
     price: '3,290',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 14,
@@ -213,6 +227,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'SIGNATURE SEASON SLIM JOGGERS',
     price: '2,290',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 15,
@@ -228,6 +243,7 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'BADGED LOGO BOYFRIEND JOGGERS',
     price: '1,990',
+    href: '/the-couture-club/ctre',
   },
   {
     id: 16,
@@ -243,6 +259,23 @@ const data = [
     heading: 'THE COUTURE CLUB',
     subHeading: 'SIGNATURE SEASON CROPPED VOLUME HOODIE',
     price: '3,090',
+    href: '/the-couture-club/ctre',
+  },
+  {
+    id: 17,
+    icon: <BookmarkIcon className="h-5 w-5 stroke-black stroke-2" />,
+    image1: 'https://cdn1.storehippo.com/s/609230a6463cd1593a6b70f1/62f66209476422ef146688f2/webp/multilogographict-shirt-black1_800x-jpg-600x800.webp',
+    image2: 'https://cdn2.storehippo.com/s/609230a6463cd1593a6b70f1/62f662093ba2cdeee60a5a2c/webp/multilogographict-shirt-black8_800x-jpg-2-600x800.webp',
+    para1: 'ADD TO CART+',
+    para2: 'XS',
+    para3: 'S',
+    para4: 'M',
+    para5: 'L',
+    para6: 'XL',
+    heading: 'THE COUTURE CLUB',
+    subHeading: 'MULTI LOGO GRAPHIC T-SHIRT - BLACK',
+    price: '3,490',
+    href: '/the-couture-club/ctre',
   },
 ];
 
@@ -250,52 +283,54 @@ export default function TheCoutureClub() {
   const renderData = (item) => {
     const {
       id, icon, image1, image2, para1, para2, para3, para4, para5, para6, heading, subHeading,
-      price,
+      price, href,
     } = item;
     return (
+      <div className="group col-span-6  md:col-span-3 mx-2" key={id}>
+        <Link href={href}>
+          <a>
+            <div>
+              <div className="">
+                <div className="flex justify-end pr-6 relative top-8">
+                  {icon}
+                </div>
+                <img
+                  src={image1}
+                  alt="Image notfound"
+                  onMouseOver={(e) => e.currentTarget.src = image2}
+                  onMouseOut={(e) => e.currentTarget.src = image1}
+                  className=" mx-auto my-auto transition ease-in-out duration-700 w-[300px]
+                h-[300px]"
+                />
 
-      <div className="group col-span-3" key={id}>
-
-        <div className="">
-          <div className="flex justify-end pr-6 relative top-8">
-            {icon}
-          </div>
-
-          <img
-            src={image1}
-            alt="Image notfound"
-            onMouseOver={(e) => e.currentTarget.src = image2}
-            onMouseOut={(e) => e.currentTarget.src = image1}
-            className=" mx-auto my-auto transition ease-in-out duration-700 w-[300px]
-              h-[300px]"
-          />
-
-          <div className="opacity-0 group-hover:opacity-100 bg-gray-50 relative bottom-4 text-gray-800">
-            <div className="flex justify-between">
-              <div>
-                <p className="cursor-pointer">{para1}</p>
+                <div className="opacity-0 group-hover:opacity-100 bg-gray-50 relative bottom-4 text-gray-800">
+                  <div className="flex justify-between">
+                    <div>
+                      <p className="cursor-pointer">{para1}</p>
+                    </div>
+                    <p className="cursor-pointer font-bold text-xs">{para2}</p>
+                    <p className="cursor-pointer font-bold text-xs">{para3}</p>
+                    <p className="cursor-pointer font-bold text-xs">{para4}</p>
+                    <p className="cursor-pointer font-bold text-xs">{para5}</p>
+                    <p className="cursor-pointer font-bold text-xs">{para6}</p>
+                  </div>
+                </div>
               </div>
-              <p className="cursor-pointer font-bold text-xs">{para2}</p>
-              <p className="cursor-pointer font-bold text-xs">{para3}</p>
-              <p className="cursor-pointer font-bold text-xs">{para4}</p>
-              <p className="cursor-pointer font-bold text-xs">{para5}</p>
-              <p className="cursor-pointer font-bold text-xs">{para6}</p>
+              <div className="py-1 cursor-pointer">
+                <h3 className="text-gray-500 text-center cursor-pointer text-sm pl-10">
+                  {heading}
+                </h3>
+                <h3 className="text-center cursor-pointer text-sm pl-12">
+                  {subHeading}
+                </h3>
+                <h4 className="text-center cursor-pointer text-sm pl-10">
+                  ₹
+                  {price}
+                </h4>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div className="py-1 cursor-pointer">
-          <h3 className="text-gray-500 text-center cursor-pointer text-sm pl-10">
-            {heading}
-          </h3>
-          <h3 className="text-center cursor-pointer text-sm pl-12">
-            {subHeading}
-          </h3>
-          <h4 className="text-center cursor-pointer text-sm pl-10">
-            ₹
-            {price}
-          </h4>
-        </div>
+          </a>
+        </Link>
       </div>
     );
   };
@@ -304,7 +339,7 @@ export default function TheCoutureClub() {
       <div className="mx-auto mt-7">
         <h1 className="text-2xl font-semibold text-center mx-auto">THE COUTURE CLUB</h1>
       </div>
-      <div className="border-b border-gray-400 mx-24 mt-7" />
+      <div className="border-b-2 border-gray-300 mx-10 mt-7" />
       <div className="flex justify-between mx-24 mt-4">
         <div className="flex space-x-4">
           <TheCoutureClubIcon Icon={AdjustmentsHorizontalIcon} title="Filter" />
